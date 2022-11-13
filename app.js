@@ -13,10 +13,10 @@ function mouseOver2(){
  //Adds event listener to the clear button
  btn.addEventListener("click", mouseOver2);
 
-// Function that creates a 16x16 grid
+//Function that creates a 16x16 grid
   function createGrid(){
     count = 0;
-    for(let i =0; count < 16; i++){
+    for(let i =0; count < 256; i++){
       var gridElement = document.createElement("div");
       gridElement.className = "grid-element";
       
@@ -28,8 +28,9 @@ function mouseOver2(){
     
     console.log(count);
   }
+  
 
-// calls grid function
+//calls grid function
   createGrid();
 
   // Adds event listener for grid squares
@@ -40,4 +41,6 @@ function mouseOver2(){
       item.style.backgroundColor = "black";
     })
   })
-console.log("hello")
+
+
+ console.log("hello");
